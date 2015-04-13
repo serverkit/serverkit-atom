@@ -1,31 +1,26 @@
-# Serverkit::Atom
+# serverkit-atom
+[Serverkit](https://github.com/r7kamura/serverkit) plug-in for [Atom](https://atom.io/).
 
-TODO: Write a gem description
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'serverkit-atom'
+## Install
+```rb
+# Gemfile
+gem "serverkit-atom"
 ```
 
-And then execute:
+## Resource
+### atom_package
+Install specified atom package.
 
-    $ bundle
+#### Attributes
+- name - package name (required)
+- version - package version (optional)
 
-Or install it yourself as:
-
-    $ gem install serverkit-atom
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/serverkit-atom/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+#### Example
+```yaml
+resources:
+  - type: atom_package
+    name: sort-lines
+  - type: atom_package
+    name: vim-mode
+    version: 0.43.0
+```
