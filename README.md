@@ -1,6 +1,12 @@
 # serverkit-atom
 [Serverkit](https://github.com/r7kamura/serverkit) plug-in for [Atom](https://atom.io/).
 
+- [Install](#install)
+- [Resource](#resource)
+  - [atom_package](#atom_package)
+    - [Attributes](#attributes)
+    - [Example](#example)
+
 ## Install
 ```rb
 # Gemfile
